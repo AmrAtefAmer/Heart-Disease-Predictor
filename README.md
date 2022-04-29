@@ -2,7 +2,7 @@
 In this project I used machine learning algorithm to predict if person may have heart disease or not and build a simple website with flask that uses a classification model. I did analysis with python(pandas library) and sql I used python because it is popular language in machine learning world
 
 # Contents
-  - Graduation Project.ipynb
+  - Heart Disease Predictor.ipynb
   - eda_sql.ipynb this file contains some analysis with sql
   - app.py
   - template folder that have html pages
@@ -26,4 +26,7 @@ In this project I used machine learning algorithm to predict if person may have 
   - Flask-WTF -WTForms -joblib
 
 # How to use project
--First u need to install anaconda, visual studio code and all libraries above -then start with running ipynb file then run py file -install git -go to heroku website and follow instructions
+  - First u need to install anaconda, visual studio code and all libraries above 
+  - then start with running ipynb file then run py file 
+  - install git 
+  - go to heroku website and follow instructions
