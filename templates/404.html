@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Error 404 !</h1>
+      <p class="lead">Page Not Found.</p>
+    </div>
+  </div>
+  <a href="{{url_for('index')}}"><b>Back To home page.</b></a>
+</div>
+{%endblock%}

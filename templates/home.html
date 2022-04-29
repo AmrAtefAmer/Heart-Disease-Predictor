@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    
+      {% for mess in get_flashed_messages() %}
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        {{mess}}
+      </div>
+
+      {% endfor %}
+
+    <div class="my_form">
+        <form method="POST" style='margin :20px'>
+            {{ form.hidden_tag() }}  
+            {{ form .smoke.label }} {{ form .smoke()}}
+            
+            {{ form.alcohol.label }}{{ form.alcohol() }}
+
+            {{ form.stroke.label }}{{ form.stroke() }}
+            
+            {{ form.pyhsicalhealth.label }}{{ form.pyhsicalhealth(class="form-control") }}
+            
+            {{ form.mentalhealth.label }}{{ form.mentalhealth(class="form-control") }}
+            <br>
+            {{ form.diffwalking.label }}{{ form.diffwalking() }}
+            
+            {{ form.sex.label }}{{ form.sex() }}
+
+            {{ form.agecategory.label }}{{ form.agecategory(class="form-control") }}
+            <br>
+            {{ form.race.label }}{{ form.race(class="form-control") }}
+            <br>
+            {{ form.diabetic.label }}{{ form.diabetic() }}
+
+            {{ form.physicalactivity.label }}{{ form.physicalactivity() }}
+
+            {{ form.genhealth.label }}{{ form.genhealth(class="form-control") }}
+            <br>
+            {{ form.sleeptime.label }}{{ form.sleeptime(class="form-control") }}
+            <br>
+            {{ form.asthma.label }}{{ form.asthma() }}
+
+            {{ form.kidneydisease.label }}{{ form.kidneydisease() }}
+
+            {{ form.skincancer.label }}{{ form.skincancer() }}
+
+            {{ form.bmi.label }} <a href="https://www.calculator.net/bmi-calculator.html" target="_blank" style="text-decoration:underline;">Calculate your BMI from here</a> {{ form.bmi(class="form-control") }} 
+            <br>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+    </div>
+</div>
+   
+{%endblock%} 

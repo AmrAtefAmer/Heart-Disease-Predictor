@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="container">
+    {% if prediction[0] == "No" %}
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Happy :)</h1>
+              <p class="lead">Thanks God you dan't have heart disease.</p>
+            </div>
+          </div>
+      
+    {% else %}
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Unfortunately !!!</h1>
+            <p class="lead">Unfortunately, you may have a heart disease, please see a doctor as soon as possible.</p>
+          </div>
+      </div>
+    {% endif %}
+  
+    <a href="{{url_for('index')}}"><b>Back To Form</b></a>
+</div>
+{%endblock%}
